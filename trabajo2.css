@@ -1,0 +1,104 @@
+*::selection {
+    background-color: rgb(87, 3, 175);
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 150px auto;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 40px auto;
+    background-color: aliceblue;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 0 50px 0 #0007;
+    border-radius: 10px;
+  }
+  
+  p::first-letter {
+    color: rgb(99, 13, 184);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900px;
+  }
+  
+  p::first-line {
+    color: rgb(46, 97, 140);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  } 
+  
+  ul {
+    margin-top: 35px;
+    counter-reset: contador;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  li {
+    margin: 20px 0 0 0;
+    position: relative; /* Añadimos position: relative; para ajustar la posición de li::before */
+  }
+  
+  li::before {
+    content: counter(contador);
+    counter-increment: contador;
+    position: absolute;
+    left: -45px;
+    top: 11px; /* Alinea verticalmente al centro */
+    transform: translateY(-50%);
+    background-color: rgba(47, 10, 170, 0.714);
+    color: whitesmoke;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+  }
+
+  
+  .card_text {
+    margin: 10px auto;
+  
+  }
+
+  .card_title {
+    text-align: center;
+    position: relative; /* Añadimos position: relative; para posicionar correctamente los pseudo-elementos */
+    margin: 14px auto; /* Ajustamos el margen superior e inferior */
+  }
+  
+  .card_title::before,
+  .card_title::after {
+    content: "";
+    position: absolute;
+    top: 50%; /* Alineamos verticalmente al centro */
+    width: 40%; /* Ancho de las líneas */
+    height: 2px; /* Grosor de la línea */
+    background-color: rgba(94, 48, 158, 0.704); /* Color de las líneas */
+    z-index: -1; /* Colocamos las líneas detrás del contenido del .card_title */
+  }
+  
+  .card_title::before {
+    right: calc(50% + 10px); /* Colocamos la línea antes del texto */
+    transform: translateY(-50%); /* Ajustamos la posición vertical */
+  }
+  
+  .card_title::after {
+    left: calc(50% + 10px); /* Colocamos la línea después del texto */
+    transform: translateY(-50%); /* Ajustamos la posición vertical */
+  }
+  
+  h2 {
+    position: relative; /* Aseguramos que el h2 tenga una posición relativa */
+    z-index: 1; /* Colocamos el h2 por encima de las líneas */
+    color: rgb(19, 19, 131);
+  }
+  

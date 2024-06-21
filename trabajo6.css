@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  body {
+    margin: 50px 180px;
+    /* display: block; */
+    background: url(https://wallpaper-house.com/data/out/5/wallpaper2you_69081.jpg) top / cover fixed #6fa;
+  }
+  
+  .gallery {
+    max-width: 1200px;
+    margin-top: 25px;
+  }
+  
+  .card {
+    display: inline-block;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 2px;
+    width: 350px; /* Tres tarjetas por fila con espacio */
+    height: 480px;
+    margin: 16px; /* Espacio entre las tarjetas */
+    vertical-align: top;
+    border: 1px solid black;
+    box-shadow: 0 0 50px 0 #0007;
+
+  }
+  
+  img {
+    display: block;
+    width: auto;
+    height: 250px;
+    margin: 2rem auto;
+    filter: drop-shadow(0 0 4px black);
+    margin-top: -2px;
+}
+  
+  h1 {
+    margin-left: 1rem;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 25px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    text-align: center;
+  }

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    /* width: 90%; */
+    margin: 20px auto;
+    background-color: #fff7ff;
+}
+
+.enlace {
+    display: block;
+    background: steelblue;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 3px solid #fff;
+    margin: 15px 193px;
+    width: 300px auto;
+    border: 1px solid black;
+}
+
+.enlace:visited {
+    background: rgb(188, 139, 239);
+}
+
+.enlace:link {
+    background: #c0daec;
+    color: black;
+}
+
+/*para los que no se han visitado  */
+
+.enlace:hover {
+    padding: 40px 20px;
+    transition: 0.3s;
+}
+
+.enlace:active {
+    background: tomato;
+    color: #fff;
+}
+
+/*cuando el cursor esta oprimido  */
+
+/* _____//// */
+
+.form {
+    width: 80%;
+    margin: 30px auto;
+    background: rgb(222, 235, 236);
+    box-shadow: 0 0 50px 0 #0007;
+    padding: 30px;
+}
+
+.form__title {
+  
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    padding-left: 14px;
+
+}
+
+
+input[type="checkbox"] {
+    display: inline-block;
+    margin: 3px;
+}
+
+input:focus {
+    background: #e4dcf3;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+input[type="checkbox"]:checked+label {
+    color: blue;
+}
+
+/* ---------------------------------- */
+
+.event {
+    display: inline-block;
+    margin: 30px 0 0 192px;
+    background: rgb(174, 104, 179);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.event:active {
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: slateblue;
+    margin: 20px 0 0 20px;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+#objetivo:target{
+    border-radius: 50%;
+}
+/* ---------------------------/// */
+
+#objetivo {
+    margin-left: 50rem;
+    margin-top: -3.75rem;
+}
+h3{ 
+    font-size: 2rem;
+   font-weight: normal; /*queda normal la letra */
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   margin: 20px;
+   margin-left: 225px;
+   display: inline-block;
+}
+
+.contacto {
+    margin-left: 670px;
+}
+
+h3:not(.contacto):not(:hover){
+    color: rgb(197, 136, 232);
+
+}  /* para indicar que no debe seleccionar */
+
+.box{
+    display: block;
+    background: rgb(208, 194, 255);
+    width: 55px;
+    height: 55px;
+    color: steelblue;
+    /* line-height: 55px; */
+    padding: 30px;
+    font-weight: bold;
+    border: 1px solid #0007;
+    text-align: center;
+    
+    margin: 1rem;
+    margin-left: 2rem -10px;
+    /* margin: 10px 0; */
+}
+
+.container{
+    margin: 20px 20px;
+    padding: 20px 0px 20px 0;
+    border: 3px solid rgb(237, 180, 247);
+}
+
+/* .box:only-of-type{
+    background: blue;
+
+} */
+
+/* .box:last-of-type{
+   background:  blueviolet;
+} */
+
+.box:nth-of-type(2n+1){
+    background: rgb(150, 140, 252);
+    margin-left: 2rem -10px;
+    display: block;
+    line-height: normal;
+}
+
+/* waos */
