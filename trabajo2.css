@@ -5,7 +5,33 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .container-menu {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.one {
+    display: inline;
+}
+
+.one a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.one a:hover {
+    background-color: #555;
+}
+
   body {
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -42,12 +68,12 @@
     text-decoration: none;
   }
   
-  li {
+ .elements {
     margin: 20px 0 0 0;
     position: relative; /* Añadimos position: relative; para ajustar la posición de li::before */
   }
   
-  li::before {
+.elements::before {
     content: counter(contador);
     counter-increment: contador;
     position: absolute;
